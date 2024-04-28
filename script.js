@@ -1,3 +1,5 @@
+// toggle navbar
+
 const mobile_nav = document.querySelector(".mobile-navbar-btn");
 const nav_header = document.querySelector(".navbar");
 
@@ -8,6 +10,7 @@ const toggleNavbar = () => {
 mobile_nav.addEventListener("click", () => toggleNavbar());
 
 
+// owl carousel image slider
 $('.owl-carousel').owlCarousel({
   loop:true,
   margin:10,
@@ -29,6 +32,7 @@ $('.owl-carousel').owlCarousel({
   }
 })
 
+// Modal gallery image
 const thumbnails = document.querySelectorAll('.gallery-item');
 thumbnails.forEach(thumbnail => {
   thumbnail.addEventListener('click', function() {
